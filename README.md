@@ -1,3 +1,15 @@
+1. Create git repository, copy ssh url, e.g. git@github.com:jbuusao/monsters.git
+2. git remote add origin git@github.com:jbuusao/monsters.git
+3. npm install gh-pages
+4. In package.json, insert after "name": "monsters", "version"..., "private": true,
+5. "homepage": "https://jbuusao.github.io/monsters"
+4. In package.json, append to "scripts":
+5. "predeploy": "npm run-script build"
+6. "deploy": "gh-pages -d build"
+7. npm run-script deploy
+8. git add -A
+9. git commit -m "Adding files foir github pages"
+10. 
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
